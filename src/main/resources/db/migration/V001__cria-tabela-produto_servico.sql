@@ -1,0 +1,6 @@
+CREATE TABLE produto_servico (
+	id UUID NOT NULL PRIMARY KEY,
+	tipo VARCHAR(20) NOT NULL,
+	valor DECIMAL(10,2) NOT NULL,
+	ativo BOOLEAN NOT NULL DEFAULT true
+);
