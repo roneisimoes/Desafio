@@ -151,3 +151,28 @@ Body:
 }
 ```
 
+## Algumas das customizações HTTP Response das requisições:
+
+Ao pesquisar por um id produto/servico inexistente:
+
+![image](https://user-images.githubusercontent.com/55517128/149383092-bb62243a-906c-4916-9da6-16b93eb84853.png)
+
+Ao cadastrar um produto/servico com valor vazio/nulo
+
+![image](https://user-images.githubusercontent.com/55517128/149383545-edf2b003-6c6c-4337-830b-56400044277a.png)
+
+Retorno busca/atualização de um produto/servico por id
+
+![image](https://user-images.githubusercontent.com/55517128/149383904-dd04852a-5c41-4c35-bd7b-ea18d3a90a5d.png)
+
+Retorno cadastro de um produto/servico
+
+![image](https://user-images.githubusercontent.com/55517128/149384278-1c3c69db-cc1d-492e-835c-e8399367fec8.png)
+
+<p>:exclamation: Não foram desenvolvidos os testes automatizados.</p>
+<p>:question: Duvidas podem entrar em contato pelo email ronei.simoes19@gmail.com ou whats.</p>
+
+
+
+
+
