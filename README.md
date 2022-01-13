@@ -44,3 +44,110 @@ https://projectlombok.org.
 Caso prefira seguir sem o Lombok pode estar comentando as anotações no projeto e gerando manualmente os métodos na ide de sua preferência.
 </p>
 
+<h2> Implementações API </h2>
+
+## PRODUTO/SERVICO
+
+### Listar Todos
+[GET] ```localhost:8080/produtos_servicos```
+
+Parametros -> $page(Nº pag), $quantity(Qtd de itens), tipo(PRODUTO/SERVICO), ativo(true,false)
+
+### Listar Unico
+[GET] ```localhost:8080/produtos_servicos/{produtoServicoId}```
+
+### Adicionar
+[POST] ```localhost:8080/produtos_servicos```
+
+Body:
+```JSON
+{
+	"tipo": "PRODUTO",
+	"valor": 650,
+	"ativo": true
+}
+```
+
+### Atualizar
+[PUT] ```localhost:8080/produtos_servicos/{produtoServicoId}```
+
+Body:
+```JSON
+{
+	"tipo": "PRODUTO",
+	"valor": 700,
+	"ativo": true
+}
+```
+### Excluir
+[DELETE] ```localhost:8080/produtos_servicos/{produtoServicoId}```
+
+## PEDIDO
+
+### Listar Todos
+[GET] ```localhost:8080/pedidos```
+
+Parametros -> $page(Nº pag), $quantity(Qtd de itens), situacao(ABERTO/FECHADO)
+
+### Listar Unico
+[GET] ```localhost:8080/pedidos/{pedidoId}```
+
+### Adicionar
+[POST] ```localhost:8080/pedidos```
+
+Body:
+```JSON
+{
+	"situacao": "FECHADO",
+	"data": "2022-01-03T11:13:29.442608-03:00",
+}
+```
+
+### Atualizar
+[PUT] ```localhost:8080/pedidos/{pedidoId}```
+
+Body:
+```JSON
+{
+	"situacao": "FECHADO",
+	"data": "2022-01-03T11:13:29.442608-03:00",
+}
+```
+### Excluir
+[DELETE] ```localhost:8080/pedidos/{pedidoId}```
+
+### Adicionar item pedido
+[PUT] ```localhost:8080/pedidos/{pedidoId}/adicionar-item```
+
+Body:
+```JSON
+{
+	"produtoServico": 
+	{
+		"id": "3921a15b-f0f6-407d-b101-16352a24857b"
+	}
+}
+```
+
+### Atualizar item pedido
+[PUT] ```localhost:8080/pedidos/{pedidoId}/atualizar-item```
+
+Body:
+```JSON
+{
+	"produtoServico": 
+	{
+		"id": "3921a15b-f0f6-407d-b101-16352a24857b"
+	}
+}
+```
+### Excluir item do pedido
+[PUT] ```localhost:8080/pedidos/{pedidoId}/excluir-item```
+
+Body:
+```JSON
+{
+	"id": "41201f2f-048a-4483-ad63-4b15b0eb78d0"
+}
+```
+
