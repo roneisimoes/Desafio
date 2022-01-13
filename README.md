@@ -151,6 +151,16 @@ Body:
 }
 ```
 
+### Aplicar desconto ao pedido
+[PUT] ```localhost:8080/pedidos/{pedidoId}/aplicar-desconto```
+
+Body:
+```JSON
+{
+	"desconto": 10
+}
+```
+
 ## Algumas das customizações HTTP Response das requisições:
 
 Ao pesquisar por um id produto/servico inexistente:
