@@ -179,6 +179,11 @@ Retorno cadastro de um produto/servico
 
 ![image](https://user-images.githubusercontent.com/55517128/149384278-1c3c69db-cc1d-492e-835c-e8399367fec8.png)
 
+Ao tentar aplicar desconto a um pedido fechado
+
+![image](https://user-images.githubusercontent.com/55517128/149426429-845eff4f-8d5a-4df2-9b2e-8c5f41db6fe7.png)
+
+
 <p>:exclamation: Não foram desenvolvidos os testes automatizados.</p>
 <p>:question: Duvidas podem entrar em contato pelo email ronei.simoes19@gmail.com ou whats.</p>
 
